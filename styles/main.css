@@ -1,0 +1,444 @@
+
+/*
+
+SOURCES:
+https://en.wikipedia.org/wiki/K-pop
+Images - https://www.google.com/search?q=kpop&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiZmpn66_bjAhVHOs0KHe_TDr8Q_AUIESgB&biw=1536&bih=754&dpr=1.25
+Murach's HTML and CSS, 4th Edition - Chapter 7 - Navigation  Bar
+Murach's HTML and CSS, 4th Edition - Chapter 8 - Two or Three Column Layout
+https://www.w3schools.com/css/
+
+*/
+
+/*Reset Selector*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: white;
+	/*
+	background: -webkit-linear-gradient(30deg, #EC407A0%, #EC407A 30%, white 50%, #EC407A 80%, #EC407A 100%);
+    background: -moz-linear-gradient(30deg, #EC407A 0%, #EC407A 30%, white 50%, #EC407A 80%, #EC407A 100%);
+    background: -o-linear-gradient(30deg, #EC407A 0%, #EC407A 30%, white 50%, #EC407A 80%, #EC407A 100%);
+    background: linear-gradient(30deg, #EC407A 0%, #EC407A 30%, white 50%, #EC407A 80%, #EC407A 100%); 
+	*/
+}
+
+body {
+	background-color: #EC407A;
+	font-family: "Trebuchet MS";
+	font-style: normal;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-right: auto;
+	margin-left: auto;
+	width: 1500px;
+	border: 2px solid black;
+}
+
+header {
+	/*background-color: #EC407A;
+	background-image: url(../images/Kpop_Background.PNG);
+	background-repeat: no-repeat;*/
+	background: #EC407A url(../images/Kpop_Background.PNG) 100% 100% no-repeat;
+	font-family: "Trebuchet MS";
+	font-style: normal;
+	color: white;
+	margin: 0em;
+	text-indent: 30px;
+	text-align: left;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	clear: both;
+	height: 150px;
+	width: 1500px;
+}
+
+header img {
+	float: left;
+	margin-top: 1em;
+	margin-left: 2em;
+	border: 3px solid #FCE4EC;
+}
+
+header h1 {
+	font-style: normal;
+	font-weight: bold;
+	margin-top: 0em;
+	padding-top: 1em;
+}
+
+header h2 {
+	padding-top: 0em;
+	padding-bottom: 0em;
+	font-size: 90%;
+	font-style: italic;
+	font-weight: semibold;
+	padding-top: 0em;
+}
+
+header em {
+	font-style: normal;
+	font-weight: bold;
+}
+
+.shadow {
+	text-shadow: 2px 1px 3px #880E4F;
+}
+
+#nav_menu {
+	float: none;
+	/*z-index: 1;  Stay on top */
+	position: absolute;
+	/*top: 0;
+	right: 0;*/
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+#nav_menu ul {
+	list-style-type: none;
+	text-indent: 0em;
+	font-family: "Trebuchet MS";	
+}
+
+#nav_menu ul li {
+	float: left;
+}
+
+#nav_menu ul li a {
+	color: black;
+	display: block;
+	width: 374px;
+	text-decoration: none;
+	background-color: white;
+	border: 0.5px solid black;
+	text-align: center;
+	font-size: 100%;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+}
+
+#nav_menu ul li a:hover {
+	color: #AD1457;
+	font-style: italic;
+	background: #EAFAF1;
+}
+
+#nav_menu ul li a:focus {
+	color: #AD1457;
+	font-style: italic;
+	background: #EAFAF1;
+}
+
+#nav_menu ul ul {
+	position: absolute;
+	top: 100%;
+	display: none;
+	clear: both;
+	margin: 0em;
+}
+
+#nav_menu ul ul li { 
+	float: none; 
+}
+
+#nav_menu ul li:hover > ul {
+    display: block; 
+	margin: 0em;
+}
+
+#nav_menu ul ul li a:hover {
+	color: #AD1457;
+	font-style: italic;
+}
+
+#nav_menu ul ul li a:focus {
+	color: #AD1457;
+	font-style: italic;
+}
+
+#nav_menu > ul::after {
+    content: "";
+    display: block;
+    clear: both; 
+}
+
+#nav_menu ul ul li {
+    float: none;
+    position: relative; 
+}
+#nav_menu ul ul li ul {
+    position: absolute;
+    left: 100%;
+    top: 0; 
+}
+
+#nav_menu ul li:hover > ul { 
+	display: block; 
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block; 
+}
+
+aside.leftcol {
+	clear: both;
+	margin-top: 5em;
+	margin-bottom: 0px;
+	margin-left: 2em;
+	margin-right: 0.5em;
+	float: left;
+	width: 15%;
+	background-color: white;
+	border: 2px solid black;
+}
+
+aside.leftcol .sideNav {
+	color: black;
+}
+
+.sideNav ul {
+	list-style-type: none;
+	height: 200px;
+}
+
+.sideNav ul li {
+	color: black;
+	background-color: white;
+	border: 2px solid black;
+}
+
+.sideNav ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+.sideNav ul li figure img {
+	margin: 0em;
+}
+
+.sideNav ul li figure {
+	margin: 0em auto;
+	padding-left: 1em;
+	padding-right: 0em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	height: 5em;
+}
+	
+
+aside.leftcol .sideNav a img:hover {	
+	border: 3px solid #F1C40F;
+}
+
+aside.leftcol .sideNav a img:focus {	
+	border: 3px solid #F1C40F;
+}
+
+
+main {
+	float: left;
+	width: 64%;
+}
+
+section {
+	background-color: white;
+	border: 2px solid black;
+	padding-top: 1em;
+	padding-bottom: 0em;
+	margin-top: 1em;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	text-indent: 1em;
+	color: black;
+}
+
+.top_section {
+	margin-top: 12em;
+}
+
+section h2 {
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+	font-weight: bold;
+}
+section p {
+	padding-top: 0em;
+	padding-bottom: 1em;
+	font-weight: normal;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+
+section h3 {
+	padding-top: 0em;
+	padding-bottom: 2em;
+	font-weight: bold;
+}
+
+article{
+	border: 2px solid black;
+	margin: 1em;
+	height: 30%;
+	background-color: LAVENDERBLUSH;
+}
+
+article h3 {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+article p {
+	margin-right: 1em;
+	margin-left: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+	font-weight: normal;
+}
+
+article a {
+	font-style: normal;
+	color: navyblue;
+	padding-left: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	text-decoration: none;
+}
+
+article a:hover {
+	font-style: italic;
+	color: #AD1457;
+}
+
+article a:focus {
+	font-style: italic;
+	color: #AD1457;
+}
+
+article figure {
+	float: right;
+	margin-right: 1em;
+}
+
+article figure img {
+	border: 2px solid black;
+	box-shadow: 1px 3px 3px steelblue;
+}
+
+article figure figcaption {
+	text-align: center;
+}
+
+article figure img {
+	padding-top: 0px;
+}
+
+section address {
+	padding-bottom: 1em;
+}
+
+section address a {
+	font-style: normal;
+	color: #5DADE2;
+	text-decoration: none;
+}
+
+section address a:hover {
+	font-style: italic;
+	color: #F1C40F;
+}
+
+section address a:focus {
+	font-style: italic;
+	color: #F1C40F;
+}
+
+aside.rightcol {
+	margin-top: 5em;
+	margin-bottom: 0px;
+	margin-left: 0.5em;
+	margin-right: 2em;
+	float: right;
+	width: 15%
+}
+
+.rightcol section {
+	margin-top: 0em;
+	color: white;
+	font-weight: bold;
+	border: none;
+	background: none;
+}
+
+.rightcol section video {
+	border: 2px solid black;
+	box-sizing: border-box;
+	color: white;
+}
+
+.rightcol section p {
+	margin-top: 1em;
+	color: white;
+	font-weight: bold;
+	border: none;
+	background: none;
+	text-indent: 0px;
+}
+
+.rightcol section p a {
+	margin-top: 1em;
+	color: navyblue;
+	font-weight: bold;
+	border: none;
+	background: none;
+	text-decoration: none;
+}
+
+.rightcol section a:hover {
+	font-style: italic;
+	color: #AD1457;
+}
+
+.rightcol section a:focus {
+	font-style: italic;
+	color: #AD1457;
+}
+
+
+.go_up {
+	padding: 1em 1.5em; 
+	margin: 1em;
+	font-size: 120%;
+	font-weight: bold;
+	position:fixed;
+    bottom:0;
+    right:0;
+	color: white;
+	border: 2px solid white;
+}
+
+footer {
+	margin-top: 1em;
+	clear: both;
+}
+footer p {
+	text-align: center;
+	color: black;
+	font-style: normal;
+	clear: both;
+	font-size: 80%;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: auto;
+	margin-right: auto;
+}

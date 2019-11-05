@@ -1,0 +1,149 @@
+
+/*
+
+SOURCES:
+https://en.wikipedia.org/wiki/K-pop
+Images - https://www.google.com/search?q=kpop&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiZmpn66_bjAhVHOs0KHe_TDr8Q_AUIESgB&biw=1536&bih=754&dpr=1.25
+Murach's HTML and CSS, 4th Edition - Chapter 7 - Navigation  Bar
+Murach's HTML and CSS, 4th Edition - Chapter 8 - Two or Three Column Layout
+https://www.w3schools.com/css/
+
+*/
+
+/*Reset Selector*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+main {
+	float: left;
+	width: 64%;
+}
+
+section {
+	padding-top: 1em;
+	padding-bottom: 0em;
+	margin-top: 12em;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	text-indent: 1em;
+	color: black;
+}
+
+section h2 {
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+	font-weight: bold;
+}
+section p {
+	padding-top: 0em;
+	padding-bottom: 1em;
+	font-weight: normal;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+
+section h3 {
+	padding-top: 0em;
+	padding-bottom: 2em;
+	font-weight: bold;
+}
+
+article{
+	border: 2px solid black;
+	margin: 1em;
+	padding-bottom: 1em;
+	height: 50%;
+	background-color: LAVENDERBLUSH;
+	color: black;
+}
+
+article h3 {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+article p {
+	margin-right: 1em;
+	margin-left: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+	font-weight: normal;
+}
+
+article a {
+	font-style: normal;
+	color: navyblue;
+	padding-left: 1em;
+	padding-top: 1em;
+	padding-right: 0.5em;
+	padding-bottom: 0.5em;
+	margin-bottom: 1em;
+	text-decoration: none;
+}
+
+article a:hover {
+	font-style: italic;
+	color: #AD1457;
+}
+
+article a:focus {
+	font-style: italic;
+	color: #AD1457;
+}
+
+article figure {
+	float: right;
+	margin-right: 1em;
+	margin-left: 0em;
+	padding-bottom: 1em;
+}
+
+article figure img {
+	border: 2px solid black;
+	box-shadow: 1px 3px 3px steelblue;
+}
+
+article figure figcaption {
+	text-align: center;
+}
+
+article figure img {
+	padding-top: 0px;
+}
+
+
+
+.go_up {
+	padding: 1em 1.5em; 
+	margin: 1em;
+	font-size: 120%;
+	font-weight: bold;
+	position:fixed;
+    bottom:0;
+    right:0;
+	color: white;
+	border: 2px solid white;
+}
+
+footer {
+	margin: auto;
+	clear: both;
+}
+footer p {
+	text-align: center;
+	color: black;
+	font-style: normal;
+	clear: both;
+	font-size: 80%;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: auto;
+	margin-right: auto;
+}

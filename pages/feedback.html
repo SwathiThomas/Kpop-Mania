@@ -1,0 +1,197 @@
+
+<!--
+SOURCES:
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_alert
+https://www.surveymonkey.com/r/8JBBRV3
+https://www.w3schools.com/tags/att_select_multiple.asp
+https://www.w3schools.com/js/js_validation.asp
+https://www.w3schools.com/tags/att_input_checked.asp
+https://developers.google.com/web/fundamentals/accessibility/focus/using-tabindex
+https://www.youtube.com/watch?v=Pe0Ce1WtnUM
+ALERT - http://www.w3schools.com/js/tryit.asp?filename=tryjs_alert
+-->
+
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Kpop Mania - Feedback</title>
+	<link rel="icon" type="image/ico" href="../images/Kpop_Logo.ico">
+	<link rel="stylesheet" type="text/css" href="../styles/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../styles/main.css">
+	<link rel="stylesheet" type="text/css" href="../styles/feedback.css">
+	<script>
+		function alertFeedbackSubmission() {
+		alert("The feedback has been submitted!");
+		}
+		function alertRatingsSubmission() {
+		alert("The ratings have been submitted!");
+		}	
+	</script>
+</head>
+
+<body>
+
+	<header>
+		<a href="../default.html"><img src="../images/Kpop_Logo.ico" alt="Logo Image" height="80"></a>
+		<h1><em class="shadow">Kpop Mania</em></h1>
+		<h2><em class="shadow">Popular bands, songs and lyrics in Korean and English</em></h2>
+		
+		
+		<nav id="nav_menu">
+		<ul>
+		<li><a href="../default.html">Home</a></li>
+		<li><a href="bands.html">Bands</a>
+			<ul>
+			<li><a href="bts.html">BTS</a>
+				<ul>
+				<li><a href="bts.html">Spring Day</a></li>
+				<li><a href="pages/bts.html">Fire</a></li>
+				</ul>
+			</li>
+			<li><a href="seventeen.html">Seventeen</a><ul>
+				<li><a href="seventeen.html">Don&rsquo;t Wanna Cry</a></li>
+				</ul>
+			</li>
+			<li><a href="blackpink.html">BlackPink</a></li>
+			<li><a href="monstax.html">Monsta X</a></li>
+			</ul>
+		</li>
+		<li><a href="statistics.html">Statistics</a></li>
+		<li><a href="feedback.html">Feedback</a></li>
+		</ul>
+		</nav>
+		
+		
+	</header>
+	
+	<aside class="leftcol">
+	<nav class="sideNav">
+	<ul>
+		<li><a href="../default.html"><figure><img src="../images/Kpop_Home.ico" alt="Home" height="80">Home</figure></a></li>
+	
+		<li><a href="bands.html"><figure><img src="../images/Kpop_Bands.ico" alt="Bands" height="80">Bands</figure></a></li>
+	
+		<li><a href="statistics.html"><figure><img src="../images/Kpop_Statistics.ico" alt="Statistics" height="70">Statistics</figure></a></li>
+	
+		<li><a href="feedback.html"><figure><img src="../images/Kpop_Feedback.ico" alt="Feedback" height="70">Feedback</figure></a></li>
+	<ul>
+	</nav>
+	</aside>
+	
+	
+	<main>
+	<h2>Feedback</h2>
+	<section>
+			<h1>Feedback Form</h1>
+    		<form name="feedback_form" id="feedback_form" onSubmit="alertFeedbackSubmission()">
+    			<fieldset>
+        			<legend>Personal Information</legend>
+					<label class="right" for="first_name">First Name:</label>
+					<input type="text" name="first_name" id="first_name" tabindex="1" autofocus required><br>
+					<label class="right" for="last_name">Last Name:</label>
+					<input type="text" name="last_name" id="last_name" tabindex="2" required><br>
+					<label class="right" for="email">E-Mail:</label>
+	        		<input type="email" name="email" id="email" tabindex="3" required><br>
+				</fieldset>
+				<fieldset>
+					<legend>Favourite Bands and Lyircs</legend>
+					<label for="favBand">Which band and which song of that band is your favourite?</label><br><br>
+                        <select name="favBand" id="favBand" tabindex="4">
+                            <optgroup label="BTS">
+                                <option value="spring">Spring Day</option>
+                                <option value="fire">Fire</option>
+                                <option value="blood">Blood Sweat Tears</option>
+                            </optgroup>
+                           <optgroup label="Seventeen">
+                                <option value="dont">Don&rsquo;t Wanna Cry</option>
+                                <option value="hit">Hit</option>
+                                <option value="high">Highlight</option>
+                            </optgroup>       
+                        </select><br><br>
+				</fieldset>
+				<fieldset>
+					<legend>Website Feedback</legend>
+					<label for="website_feedback">How easy is it to understand the information on the website?</label><br><br>
+					<select name="website_feedback" id="website_feedback" tabindex="5">
+				    	<option value="ee">Extremely easy</option>
+				    	<option value="ve">Very easy</option>            
+				    	<option value="me">Moderately easy</option>
+						<option value="nse">Not so easy</option>            
+				    	<option value="ne">Not easy at all</option>
+					</select><br><br>
+					<label for="website_feedback_likes">What do you like about the website?</label><br><br>
+					<select name="website_feedback_likes" id="website_feedback_likes" tabindex="6" multiple>
+						<option value="a">User Interface</option>
+						<option value="b">Ease of Navigation</option>
+						<option value="c">Amount of Information</option>
+						<option value="d">Usefulness of Content</option>
+						<option value="e">Selection of Images</option>
+					</select><br><br>
+					<label for="website_comments">Do you have any other comments about how we can improve the website?</label><br><br>
+					<textarea name="website_comments" id="website_comments" rows="7" cols="50" tabindex="7">
+					</textarea><br><br>
+				</fieldset>
+				
+				
+				<fieldset id="buttons">
+					<legend>Submit Feedback</legend>
+					<label>&nbsp;</label>
+					<input type="submit" id="submit" value="Submit" tabindex="8">
+					<input type="reset" id="reset" value="Reset" tabindex="9"><br>
+				</fieldset>
+			</form>
+		</section>
+	<aside>
+	<h1>Ratings Form</h1>
+    		<form name="ratings_form" id="ratings_form" onSubmit="alertRatingsSubmission()">
+    			<fieldset>
+					<label for="positive_attributes">The website is/was:</label><br><br>
+					<label for="fun"><input class="checkbox" type="checkbox" name="ratingOne" id="fun" value="fun" tabindex="10">Fun to visit</label><br>
+					<label for="design"><input class="checkbox" type="checkbox" name="ratingOne" id="design" value="design" tabindex="11">Well Designed</label><br>
+					<label for="color"><input class="checkbox" type="checkbox" name="ratingOne" id="color" value="color" tabindex="12">Uses good colors</label><br><br>
+					
+					<label for="rate_experience">How would you like to rate your experience?</label><br><br>
+					<label for="good"><input class="radio" type="radio" name="expRate" id="good" value="good" tabindex="13" required>It was a GOOD experience</label><br>
+					<label for="ok"><input class="radio" type="radio" name="expRate" id="ok" value="ok" tabindex="14">It was an OK experience</label><br>
+					<label for="bad"><input class="radio" type="radio" name="expRate" id="bad" value="bad" tabindex="15">It was a BAD experience</label><br><br>
+					
+					<label for="visit_again">Will you visit the website again?</label><br><br>
+					<label for="yes"><input class="radio" type="radio" name="visit" id="yes" value="yes" tabindex="16" required>Yes</label>
+					<label for="no"><input class="radio" type="radio" name="visit" id="no" value="no" tabindex="17">No</label><br><br>
+					
+				</fieldset>
+				
+				<fieldset id="rating_buttons">
+					<legend>Submit Ratings</legend>
+					<label>&nbsp;</label>
+					<input type="submit" id="submit" value="Submit" tabindex="18">
+					<input type="reset" id="reset" value="Reset" tabindex="19"><br>
+				</fieldset>
+			</form>
+	</aside>
+	</main>
+	
+	<aside class="rightcol">
+	
+	<section>
+	<h2>Other Bands</h2>
+	<address>
+		<a href="https://www.koreaboo.com/news/top-10-k-pop-groups-of-all-time-according-to-specific-data/">koreaboo.com</a><br>
+	</address>
+	
+	<h2>More Lyrics</h2>
+	<address>
+		<a href="https://www.azlyrics.com/">AZ Lyrics</a>
+	</address>
+	</section>
+	
+	</aside>
+
+	<a class="go_up" href="#" class="up">&uparrow;</a>
+	
+	<footer>
+		<p>&copy; 2019, Kpop Lyrics, All copyrights reserved.</p>
+	</footer>
+</body>
+</html>

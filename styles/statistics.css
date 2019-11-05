@@ -1,0 +1,262 @@
+
+/*
+SOURCES:
+https://www.w3schools.com/tags/att_col_width.asp
+Murach's HTML and CSS, 4th Edition - Chapter 12
+*/
+
+/*Reset Selector*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+main {
+	float: left;
+	width: 64%;
+	height: 1200px;
+}
+
+/*Table*/
+
+#statisticsFig {
+	margin-top: 2.5em;
+	padding: 1em;
+	background: white;
+	border: 2px solid black;
+}
+
+figcaption {
+	color: black;
+	font-size:1em;
+	font-weight: bold;
+	font-size: 150%;
+	padding-bottom: 1em;
+}
+
+
+table {
+	border-collapse: collapse;
+	color: black;
+	text-align: center;
+	margin: 1em;
+	padding-bottom: 1em;
+	padding-right: 2.5em;
+	padding-left: 1em;
+}
+thead {
+	border-top: 4px solid #EC407A;
+	border-bottom: 4px solid #EC407A;
+}
+tfoot {
+	border-top: 4px solid #EC407A;
+	border-bottom: 4px solid #EC407A;
+}
+th, td {
+	padding: .2em .5em;
+	text-align: center;
+}
+
+
+tfoot th, tfoot td {
+	text-align: center;
+	font-weight: bold;
+}
+
+
+
+.top_border {
+	border-top: 4px solid #EC407A;
+}
+
+tr.bold td {
+	font-weight: bold;
+	text-align: right;
+}
+
+.right {
+	text-align: right;
+}
+
+.right_top_border {
+	border-top: 4px solid #EC407A;
+	text-align: right;
+}
+
+.table_caption {
+	padding-bottom: 0.5em;
+}
+
+main section {
+	float: left;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+	text-indent: 20px;
+	font-family: "Trebuchet MS";
+	font-style: normal;
+	color: black;
+	margin: 1em;
+	text-align: left;
+	background-color: white;
+}
+
+main aside {
+	float: right;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+	text-indent: 20px;
+	font-family: "Trebuchet MS";
+	font-style: normal;
+	color: black;
+	margin: 1em;
+	text-align: left;
+	background-color: white;
+}
+
+main a {
+	font-style: normal;
+	color: navyblue;
+	padding-left: 20px;
+	text-decoration: none;
+	position: absolute;
+	bottom: -1360px;
+	right: 200px;
+	font-weight: bold;
+}
+
+main a:hover {
+	font-style: italic;
+	color: #AD1457;
+}
+
+main a:focus {
+	font-style: italic
+	color: #AD1457;
+}
+
+main h2 {
+	margin-top: 8em;
+	padding-bottom: 0.2em;
+	font-weight: bold;
+	text-indent: 20px;
+	color: white;
+}
+
+main section h2 {
+	padding-top: 0em;
+	padding-bottom: 0em;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 120%;
+	color: black;
+	margin-top: 1em;
+}
+
+main aside h2 {
+	padding-top: 0em;
+	padding-bottom: 0em;
+	font-weight: bold;
+	text-indent: 20px;
+	font-style: italic;
+	font-size: 120%;
+	color: black;
+	margin-top: 1em;
+}
+
+main section p {
+	padding-top: 0em;
+	padding-bottom: 1em;
+	font-weight: normal;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+
+main section h3 {
+	padding-top: 0em;
+	padding-bottom: 2em;
+	font-weight: bold;
+}
+
+
+main section address {
+	padding-bottom: 20px;
+}
+
+main section address a {
+	font-style: normal;
+	color: steelblue;
+	text-decoration: none;
+}
+
+main section address a:hover {
+	font-style: italic;
+	color: #AD1457;
+}
+
+main section address a:focus {
+	font-style: italic;
+	color: #AD1457;
+}
+
+main article a {
+	font-style: normal;
+	color: navyblue;
+	padding-left: 1em;
+	padding-top: 1em;
+	padding-right: 0.5em;
+	padding-bottom: 0.5em;
+	margin-bottom: 1em;
+	text-decoration: none;
+}
+
+main article a:hover {
+	font-style: italic;
+	color: #AD1457;
+}
+
+main article a:focus {
+	font-style: italic;
+	color: #AD1457;
+}
+
+
+
+.go_up {
+	padding: 1em 1.5em; 
+	margin: 1em;
+	font-size: 120%;
+	font-weight: bold;
+	position:fixed;
+    bottom:0;
+    right:0;
+	color: white;
+	border: 2px solid white;
+}
+
+footer {
+	margin: auto;
+	clear: both;
+}
+
+footer p {
+	text-align: center;
+	color: black;
+	font-style: normal;
+	clear: both;
+	font-size: 80%;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: auto;
+	margin-right: auto;
+}

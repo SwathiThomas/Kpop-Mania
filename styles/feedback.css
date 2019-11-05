@@ -1,0 +1,285 @@
+
+/*
+SOURCES:
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_alert
+https://www.surveymonkey.com/r/8JBBRV3
+https://www.w3schools.com/tags/att_select_multiple.asp
+https://www.w3schools.com/js/js_validation.asp
+https://www.w3schools.com/tags/att_input_checked.asp
+*/
+
+
+
+/*Reset Selector*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+main {
+	float: left;
+	width: 64%;
+	height: 1200px;
+}
+
+
+main section {
+	border: 1px solid black;
+	float: left;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+	text-indent: 20px;
+	font-family: "Trebuchet MS";
+	font-style: normal;
+	color: black;
+	margin: 1em;
+	text-align: left;
+	background-color: white;
+	width: 49%;
+}
+
+main aside {
+	border: 1px solid black;
+	float: right;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+	text-indent: 20px;
+	font-family: "Trebuchet MS";
+	font-style: normal;
+	color: black;
+	margin: 1em;
+	text-align: left;
+	background-color: white;
+	width: 29%;
+}
+
+main a {
+	font-style: normal;
+	color: navyblue;
+	padding-left: 20px;
+	text-decoration: none;
+	position: absolute;
+	bottom: -1360px;
+	right: 200px;
+	font-weight: bold;
+}
+
+main a:hover {
+	font-style: italic;
+	color: #AD1457;
+}
+
+main a:focus {
+	font-style: italic
+	color: #AD1457;
+}
+
+main h2 {
+	margin-top: 8em;
+	padding-bottom: 0.2em;
+	font-weight: bold;
+	text-indent: 20px;
+	color: white;
+}
+
+main section h2 {
+	padding-top: 0em;
+	padding-bottom: 0em;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 120%;
+	color: black;
+	margin-top: 1em;
+}
+
+main aside h2 {
+	padding-top: 0em;
+	padding-bottom: 0em;
+	font-weight: bold;
+	text-indent: 20px;
+	font-style: italic;
+	font-size: 120%;
+	color: black;
+	margin-top: 1em;
+}
+
+main section p {
+	padding-top: 0em;
+	padding-bottom: 1em;
+	font-weight: normal;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+
+main section h3 {
+	padding-top: 0em;
+	padding-bottom: 2em;
+	font-weight: bold;
+}
+
+
+main section address {
+	padding-bottom: 20px;
+}
+
+main section address a {
+	font-style: normal;
+	color: steelblue;
+	text-decoration: none;
+}
+
+main section address a:hover {
+	font-style: italic;
+	color: #AD1457;
+}
+
+main section address a:focus {
+	font-style: italic;
+	color: #AD1457;
+}
+
+main article a {
+	font-style: normal;
+	color: navyblue;
+	padding-left: 1em;
+	padding-top: 1em;
+	padding-right: 0.5em;
+	padding-bottom: 0.5em;
+	margin-bottom: 1em;
+	text-decoration: none;
+}
+
+main article a:hover {
+	font-style: italic;
+	color: #AD1457;
+}
+
+main article a:focus {
+	font-style: italic;
+	color: #AD1457;
+}
+
+
+
+.go_up {
+	padding: 1em 1.5em; 
+	margin: 1em;
+	font-size: 120%;
+	font-weight: bold;
+	position:fixed;
+    bottom:0;
+    right:0;
+	color: white;
+	border: 2px solid white;
+}
+
+
+/* the styles for the form */
+
+form {
+	height: 800px;
+}
+fieldset {
+    /*margin-top: 1em;*/
+    margin-bottom: .5em;
+    padding-top: .5em;
+	padding-bottom: .5em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+legend {
+    color: black;
+    font-weight: bold;
+    font-size: 85%;
+    margin-bottom: .5em;
+}
+
+form label {
+    float: left;
+	text-indent: 0em;
+}
+
+.right {
+	text-align: right;
+	width: 12em;
+}
+
+label, input, select {
+	font-size: 90%;
+}
+input, select {
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+input:required, input[required] {
+	border: 2px solid #800000;
+}
+input:valid {
+	border: 1px solid black;
+}
+input:invalid {
+	box-shadow: none;
+	border: 2px solid #800000;
+}
+br {
+    clear: both;
+}
+
+#buttons input {
+	width: 10em;
+}
+
+#rating_buttons input {
+	width: 6em;
+}
+
+.radio {
+	display: inline;
+	margin-left: 3em;  
+    overflow: hidden; 
+	width: 2em;
+}
+
+.checkbox {
+	display: inline;
+	margin-left: 3em;  
+    overflow: hidden; 
+	width: 2em;
+	float: left;
+}
+
+#expiration_date_month {
+	width: 7em;
+}
+#expiration_date_year {
+	width: 5em;
+}
+
+/**/
+
+footer {
+	margin: auto;
+	clear: both;
+}
+
+footer p {
+	text-align: center;
+	color: black;
+	font-style: normal;
+	clear: both;
+	font-size: 80%;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: auto;
+	margin-right: auto;
+}
