@@ -15,4 +15,4 @@ The project can be run in two ways:
 
 1) After pulling the project to the local folder on your system, launch the default.html file in any of the web browsers such as Google Chrome, Edge, Internet Explorer.
 
-2) Open the link _ in an of the above web browser.
+2) Copy the link https://kpop-mania.azurewebsites.net and open it in any of the above web browser.
