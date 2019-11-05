@@ -15,6 +15,7 @@ To install the project on your system follow the steps below:
     2.3) Press ```Enter``` key
 
 3) Run the following command in the command prompt.
+
 ```git init```
 
 4) Copy and paste the following command in the command prompt and press ```Enter``` so that you can connect to the repository and install the project on your system.
