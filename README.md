@@ -1,11 +1,18 @@
 # Kpop-Mania
 Project Development - Assignment Three
 
-# How to install the project
+## How to install the project
 To install the project on your system copy and paste the following command in the command prompt so that you can connect to the repository and install the project on your system.
 
-## git clone https://SwathiLizThomas@bitbucket.org/SwathiLizThomas/specialitybeveragespricecalculator.git
+git clone https://SwathiLizThomas@bitbucket.org/SwathiLizThomas/specialitybeveragespricecalculator.git
 
 Or you can also enter git clone in the command prompt followed by the URL given below:
 
-## https://SwathiLizThomas@bitbucket.org/SwathiLizThomas/specialitybeveragespricecalculator.git
+https://SwathiLizThomas@bitbucket.org/SwathiLizThomas/specialitybeveragespricecalculator.git
+
+## How to run the project
+The project can be run in two ways:
+
+1) After pulling the project to the local folder on your system, launch the default.html file in any of the web browsers such as Google Chrome, Edge, Internet Explorer.
+
+2) Open the link _ in an of the above web browser.
