@@ -9,7 +9,9 @@ To install the project on your system follow the steps below:
 2) Assuming that in File Explorer you have opened the target folder which is the new folder created, do this:
 
     2.1) Click on address bar, alternatively press ```Alt```+```D```
+    
     2.2) Now when address bar is highlighted, type ```cmd``` in the bar
+    
     2.3) Press ```Enter``` key
 
 3) Run the following command in the command prompt.
